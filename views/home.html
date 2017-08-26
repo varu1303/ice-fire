@@ -1,0 +1,16 @@
+<div class=container>
+<div class="row">
+<div class="col-md-12">
+
+<div ng-repeat="item in data"  >
+<h1 ng-show="$index == 0" >BOOKS</h1>
+<book-list book-object="item" ng-show="item.isbn" ></book-list>
+<h1 ng-show="$index == (booklength)" >CHARACTERS</h1>
+
+<char-list char-object="item" ng-show="item.gender" ></char-list>
+<h1 ng-show="$index == (charlength)" >HOUSES</h1>
+<house-list house-object="item" ng-show="item.region"></house-list>
+</div>
+</div>
+</div>
+</div>
